@@ -1,0 +1,6 @@
+plugin:
+    name: 'zaxbux.fontawesome::lang.plugin.name'
+    description: 'zaxbux.fontawesome::lang.plugin.description'
+    author: Zachary Schneider
+    icon: icon-flag
+    homepage: 'https://www.zacharyschneider.ca'
