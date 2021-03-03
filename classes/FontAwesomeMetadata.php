@@ -30,8 +30,8 @@ class FontAwesomeMetadata {
 
 	public function __construct($basePath = null) {
 		if (!$basePath) {
-			$pro = Config::get('zaxbux.fontawesome::config.fontawesome.pro', false);
-			$basePath = Config::get('zaxbux.fontawesome::config.fontawesome.packages.' . $pro ? 'pro' : 'free');
+			$package = Config::get('zaxbux.fontawesome::fontawesome.pro', false) ? 'pro' : 'free';
+			$basePath = Config::get('zaxbux.fontawesome::fontawesome.packages')[$package];
 		}
 
 		$this->configPathIcons      = $basePath . self::CONFIG_ICONS;

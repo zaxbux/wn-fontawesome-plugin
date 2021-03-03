@@ -6,7 +6,7 @@ use Lang;
 use Illuminate\Contracts\Validation\Rule;
 use Zaxbux\FontAwesome\Classes\FontAwesomeMetadata;
 
-class FontAwesome implements Rule {
+class FontAwesomeIcon implements Rule {
 	/**
 	 * Determine if the validation rule passes.
 	 *

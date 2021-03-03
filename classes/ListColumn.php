@@ -17,9 +17,9 @@ class ListColumn {
 	 */
 	public static function fontawesome($value, $column, $record) : string {
 		if ($iconField = $column->getConfig('fontawesome.iconField')) {
-			return \sprintf('<i class="%s fa-fw"></i>&nbsp;%s', self::getIconStyleClass($record->{$iconField}, $column->getConfig('style', self::STYLE_REGULAR)), $value);
+			return \sprintf('<i class="%s fa-fw"></i>&nbsp;%s', FontAwesomeMetadata::getIconStyleClass($record->{$iconField}, $column->getConfig('style', FontAwesomeMetadata::STYLE_REGULAR)), $value);
 		}
 
-		return \sprintf('<i class="%s fa-fw"></i>&nbsp;%s', self::getIconStyleClass($value, $column->getConfig('style', self::STYLE_REGULAR)), $value);
+		return \sprintf('<i class="%s fa-fw"></i>&nbsp;%s', FontAwesomeMetadata::getIconStyleClass($value, $column->getConfig('style', FontAwesomeMetadata::STYLE_REGULAR)), $value);
 	}
 }
