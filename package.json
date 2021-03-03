@@ -1,5 +1,22 @@
 {
-  "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.15.2"
+  "name": "oc-fontawesome-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "October CMS plugin that integrates FontAwesome.",
+  "homepage": "https://github.com/zaxbux/oc-fontawesome-plugin",
+  "bugs": "https://github.com/zaxbux/oc-fontawesome-plugin/issues",
+  "keywords": [
+    "october cms",
+    "fontawesome",
+    "icon"
+  ],
+  "author": {
+    "name": "Zachary Schneider",
+    "email": "hello@zacharyschneider.ca",
+    "url": "https://www.zacharyschneider.ca"
+  },
+  "peerDependencies": {
+    "@fortawesome/fontawesome-free": "^5.0",
+    "@fortawesome/fontawesome-pro": "^5.0"
   }
 }
